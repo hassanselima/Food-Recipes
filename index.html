@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Food Recipes</title>
+  </head>
+  <body>
+    <div class="container-fluid p-0 d-flex align-items-start">
+      <div class="sidebar">
+        <div class="side-content">
+          <ul class="lists">
+            <li class="recipe active" data-name="pizza">Pizza</li>
+            <li class="recipe" data-name="pasta">Pasta</li>
+            <li class="recipe" data-name="chicken">Chicken</li>
+            <li class="recipe" data-name="seafood">Seafood</li>
+            <li class="recipe" data-name="cake">Cake</li>
+          </ul>
+        </div>
+        <div class="icon align-self-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            fill="currentColor"
+            class="bi bi-chevron-right open"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div class="container">
+        <h1 class="my-5 display-3 recipeName" id="recipeName"></h1>
+        <div
+          class="row row-cols-1 row-cols-md-2 row-cols-lg-3"
+          id="cards"
+        ></div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
