@@ -67,7 +67,9 @@ function displayRecipes() {
             </a>
             <div class="card-body bg-white text-center rounded-bottom-2">
               <h5 class="card-title title fs-5">${recipes[i].title}</h5>
-              <p class="card-text fs-5"><strong>Rank: </strong>${recipes[i].social_rank}</p>
+              <p class="card-text fs-5"><strong>Rank: </strong>${Math.floor(
+                recipes[i].social_rank
+              )}%</p>
             </div>
           </div>
         </div>`;
